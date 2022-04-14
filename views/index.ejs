@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/_home/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Aoof</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/_media/profile.jpg" alt="profile" class="profile">
+        <div class="headline">
+            <div id="name">Abdulrahman Mousa</div>
+            <div id="description">Scarborough, ON M1T</div>
+            <div><a href="mailto:aoof.mousa@gmail.com" id="contact-e">aoof.mousa@gmail.com</a></div>
+            <div><a href="tel:+15147177233" id="contact-t">+1 (514) 717-7233</a></div>
+        </div>
+
+        <div class="aboutme">
+            <div class="headline">About me <hr></div>
+            <div class="desc">
+                Hey, I am Abdulrahman Mousa, <span class="age">17</span> year old self-taught developer/hobbyist. Exposed to
+                coding when I was 10 and ever since then I was fascinated by the vast world of programming.
+                I taught myself using multiple sources, famous ones of which are <a href="https://udemy.com/" target="_blank">Udemy, </a> <a href="http://w3schools.com/" target="_blank" rel="noopener noreferrer">W3schools, </a> and experience
+                by testing, practicing, and reading the documenations.
+                <br><br>
+                <ul>
+                    <li>
+                        On Oct. 6, 2019 I have finished a 27 hour <a href="https://udemy.com/" target="_blank">Udemy</a> course of JavaScript Full-Stack, about 
+                        Understanding the JavaScript language itself, Node.js, MongoDB, The Web Browser and More To Create Meaningful Applications. The course
+                        is called Learn JavaScript: Full-Stack from Scratch by Brad Schiff.
+                    </li><br>
+                    <li>
+                        On Aug. 10, 2019 I have finished a 32 hour <a href="https://udemy.com/" target="_blank">Udemy</a> course of Python web development using django on 
+                        the course taught me how to use HTML, CSS, Bootstrap, Javascript, jQuery, Python 3, and Django, course is called Python and Django Full Stack Web Developer Bootcamp.
+                    </li><br>
+                    <li>
+                        On Jun. 9, 2019 I have finished a 22 hour <a href="https://udemy.com/" target="_blank">Udemy</a> course of Python, it was about Learning Python like a Professional Start from the basics and go all the way to creating your own applications and games,
+                        teaching me a lot of essential modules and improving my knowledge of python and programming sense.
+                    </li><br>
+                    <li>
+                        I have made  7 different web projects throughout my journey, 2 of which were while following the courses. Twitch bot was one of my longer projects
+                        called it RoyalButler and it was to play around with the twitch api, hooked the bot with a website and ran them both simultaneously, I am currently
+                        working on RoyalButler v2.0.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="headline">Skills <hr></div>
+            <div class="details">
+                <div class="skill">
+                    <div class="name">Python</div>
+                    <div class="bar py"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">JavaScript</div>
+                    <div class="bar js"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">Node.js</div>
+                    <div class="bar node"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">Express.js</div>
+                    <div class="bar express"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">HTML5</div>
+                    <div class="bar html"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">CSS & SCSS</div>
+                    <div class="bar css"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">C#</div>
+                    <div class="bar cs"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">MySQL</div>
+                    <div class="bar sql"></div>
+                </div>
+                <div class="skill">
+                    <div class="name">MongoDB</div>
+                    <div class="bar mongodb"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="headline">Projects <hr></div>
+            <div class="details">
+                <div class="card">
+                    
+                    <a href="http://haconsultation.com" target="_blank" rel="noopener noreferrer">
+                        <div class="image_container">
+                            <img src="/_media/ha.png" alt="haconsultation">
+                        </div>
+                    </a>
+
+                    <div class="desc">
+                        <div class="header">H&A Consultation</div>
+                        <p>
+                            Aviation consulting provided by Al Moosa & Abdulkarem Mousa.<br>
+                            Built using Wordpress hosted on bluehost with a domain from GoDaddy.<br>
+                            You can visit the website on <a href="http://haconsultation.com/" target="_blank" rel="noopener noreferrer">https://haconsultation.com/</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="http://castlecanada.com" target="_blank" rel="noopener noreferrer" id="castlecanada">
+                        <div class="image_container">
+                            <img src="/_media/castlecanada.png" alt="castlecanada">
+                        </div>
+                    </a>
+
+                    <div class="desc">
+                        <div class="header">The Castle Canada</div>
+                        <p>
+                            Fragrances and Perfumes online store.<br>
+                            Built and hosted on Shopify, photo editing, and theme editing.<br>
+                            You can visit the website on <a href="http://castlecanada.com/" target="_blank" rel="noopener noreferrer">https://castlecanada.com/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var dob = new Date("01/26/2004");  
+    var month_diff = Date.now() - dob.getTime();
+    var age_dt = new Date(month_diff);
+    var year = age_dt.getUTCFullYear();
+    var age = Math.abs(year - 1970); 
+
+    document.querySelector(".age").innerHTML = age;
+</script>
+</html>
