@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "ROBOTO", sans-serif;
+    overflow: hidden;
+}  
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #1e1f26;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.container h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.3rem;
+  color: #03dac6;
+  transition: all 0.3s ease;
+  z-index: 3;
+
+  cursor: default;
+}
+
+.container h2,
+.container p:not(.credits) {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.container p {font-size: 1vw;}
+
+a {
+    color: #7FDBFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff0266;
+}
+
+.credits {
+    position: fixed;
+    bottom: 10px; right: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    z-index: 3;
+
+    font-size: 1vw;
+    letter-spacing: 0.1rem;
+
+    color: white;
+}
+
+#background {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: auto;
+
+    z-index: 0;
+}
+
+@media only screen and (min-width: 360px) {
+    #background {
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+}
